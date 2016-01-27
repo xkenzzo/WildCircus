@@ -24,8 +24,7 @@ section h1, footer h1, nav a
 header
 {
 	background-color: rgb(238, 134, 64);
-	border: 2px solid black;
-	border-radius: 6px;
+	border-bottom: 2px solid black;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -47,6 +46,7 @@ header
 {
 	height: 80px;
 	width: 70px;
+	float: left;
 }
 
 header h1
@@ -92,8 +92,11 @@ nav a:hover
     border-bottom: 3px solid #760001;
 }
 
-/* Corps */
-
+/* Body */
+#tupetesuncables
+{
+    text-align: center
+}
 section
 {
     display: flex;
@@ -111,6 +114,19 @@ article
     flex: 3;
 }
 
+article h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+article h2
+{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
 .ico_categorie
 {
     vertical-align: middle;
@@ -119,75 +135,224 @@ article
 
 article p
 {
-    font-size: 0.8em;
+    font-size: 20px;
 }
 
+/* Body- FIRST ACT SECOND ACT THIRD ACT pages */
+#first_act + #second_act + #third_act
+{
+    margin-bottom: 50px;
+    margin-top:  30px;
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+}
+
+#elephants + #tiger + #horse + #pinkpanters + #fivebro + #Green_bird
+{
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Body- CONTACT PAGE */
+#contactus
+{   
+    margin: 20px;
+    font-size: 50px;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    margin: 0 auto;
+    width: 500px;
+}
+
+form p
+{
+    font-size: 15px;
+}
+
+.send 
+{
+    width: 30%;
+    border: solid black 3px;
+}
+
+label
+{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+/* Body- ASIDE */
 aside
 {
     flex: 1.2;
     position: relative;
-    background-color: #706b64;
-    box-shadow: 0px 2px 5px #1c1a19;
-    border-radius: 5px;
+    background-color: rgba(83, 0, 0, 0.5);
+    border-left: black solid 2px;
     margin-top: 10px;
     padding: 10px;
     color: white;
     font-size: 0.9em;
 }
 
-#fleche_bulle
-{
-    position: absolute;
-    top: 100px;
-    left: -12px;
-}
 
-#image_tournee
-{
-    text-align: center;
-}
-
-#image_tournee img
+#tiger img
 {
     border: 1px solid black;
-    width: 300px;
+    width: 450px;
+    position: relative;
+    left: 8%;
 }
 
+#acrobats img
+{
+    border: 1px solid black;
+    width: 450px;
+    position: relative;
+    left: 8%;
+}
+
+#trapeze img
+{
+    border: 1px solid black;
+    width: 450px;
+    position: relative;
+    left: 8%;
+}
+#horses img
+{
+    border: 1px solid black;
+    width: 450px;
+    position: relative;
+    left: 8%;
+}
 aside img
 {
     margin-right: 5px;
     margin-top: 10px;
 }
+
 aside h1
 {
 	text-align: center;
+    font-size: 200%;
 }
 
+/* Aside- HOME page */ 
+.planning
+{
+    text-align: center;
+}
+aside h2
+{
+    margin-bottom: -3%;
+    margin-top: 5%;
+}
 /* Footer */
-footer
+footer 
+{
+    position: relative; 
+    clear:both;
+    margin-top: 100px;
+    height: 50px;
+    padding-bottom: -200px;
+}
+
+#baspage
 {
 	background-color: rgb(238, 134, 64);
-	border: 2px groove black ;
-	border-radius: 6px;
-	vertical-align: top;
+	background-position: bottom;
+	border-top: 2px solid black ;
 }
-footer img
+
+footer p, footer ul
 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
+    font-size: 0.8em;
 }
-#rs 
+
+footer h1
 {
-	margin-left: 10%;
+    font-size: 1.1em;
 }
-#nos_photos
+
+#rs
 {
-	margin-left: 50%;
+    width: 35%;
+    position: relative;
+    left: 40%;
 }
-#nos_photos img
+
+#rs img
 {
-	height: 60px;
+    margin:auto;
+    height: 100%;
+    width: :100%;
+
+}
+
+#fb + #tw + #fl + #rss + #vi
+{
+    margin-right: auto;
+    margin-left: auto;
+    height: 60px;
+}
+
+@keyframes AutoSlide {
+    0% {
+        left: 0px; /*1ère image*/
+    }
+    15% {
+        left: 0px; /*idem pour attente*/
+    }
+    35% {
+        left: -150px; /*2ème image*/
+    }
+    50% {
+        left: -150px; /*idem pour attente*/
+    }
+    70% {
+        left: -300px; /*3ème image*/
+    }
+    85% {
+        left: -300px; /*idem pour attente*/
+    }
+    100% {
+        left: 0px; /*1ère image*/
+    }
+}
+
+#slideshow {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    margin:  20px auto;
+    overflow: hidden;
+}
+#sContent li {
+    position: center;
+}
+
+#sContent {
+    display: inline;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    margin: 0;            
+    padding: 0;
+    
+    /*CSS3 keyframes animation*/
+    animation-name: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
