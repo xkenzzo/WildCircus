@@ -32,35 +32,30 @@
 
 		<section>
 			<article>
-				<h1>Contact us</h1>
-					<p>#texte1</p>
+				<div id="contactus"><h1>Contact us</h1>
+					<form method="post" action="mailto:lucas.suquet@gmail.com">
+						<p><label for="user_name">Name :</label><input class="name" type="text" name="name" id="user_name" maxlength="15" required /></p>
+						<p><label for="user_email">E-mail :</label><input class="email" type="email" name="e-mail" id="user_email" required /></p>
+						<p><label for="user_msg">Message :</label><textarea class="msg" name="msg" id="user_msg"></textarea></p>
+						<input class="send" type="submit" value="Send" />
+					</form>
+				</div>
 			</article>
 			<aside>
-				<h1>Programme de la Tournée</h1>
-				<img src="bulle.png" alt="" id="fleche_bulle" />
-				<p id="image_tournee" ><img src="tournée.jpg" alt="image_tournée" /></p>
-				<p>Programme tournée</p>
+				<h1>The Horses</h1>
+				<p id="horses" ><img src="chevaux.jpg" alt="horses" /></p>
 			</aside>
 		</section>
 
 		 <footer>
                 <div id="baspage">
                 	<div id="rs">
-                    	<table><caption>Réseaux sociaux</caption>
-                    		<tbody><td><img class="fb" src="facebook.png" alt="Photography" /></td>
-                    		<td><img class="fl" src="flickr.png" alt="Photography" /></td>
-                    		<td><img class="tw" src="twitter.png" alt="Photography" /></td>
-                    		<td><img class="vi" src="vimeo.png" alt="Photography" /></td>
-                    		<td><img class="rss" src="rss.png" alt="photography" /></td></tbody>
-                    	</table>
-                	</div>
-                	<div id="mes_photos">
-                    	<table><caption>Mes photos</caption>
-                    		<tbody><td><img class="clown" src="clown.jpg" alt="Photographie" /></td>
-                    		<td><img class="elephant" src="elephant.jpg" alt="Photographie" /></td>
-                    		<td><img class="chevaux" src="chevaux.jpg" alt="Photographie" /></td>
-                    		<td><img class="accrobate" src="accrobate.jpg" alt="Photographie" /></td></tbody>
-                    	</table>
+                    	<p>Follow us!</p>
+                    		<a href="http://www.facebook.com" title="facebook" class="social"><img class="fb" src="facebook.png" alt="Photography" /></a>
+                    		<a href="https://www.flickr.com" title="fl" class="flickr"><img class="fl" src="flickr.png" alt="Photography" /></a>
+                    		<a href="http://www.twitter.com" title="twitter" class="twiiter"><img class="tw" src="twitter.png" alt="Photography" /></a>
+                    		<a href="http://vimeo.com" title="vimeo" class="vim"><img class="vi" src="vimeo.png" alt="Photography" /></a>
+                    		<a href="http://rss.com" title="rss" class="rss"><img class="rss" src="rss.png" alt="photography" /></a>
                 	</div>
                 </div>
             </footer>
